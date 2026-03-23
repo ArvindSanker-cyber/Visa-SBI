@@ -74,7 +74,9 @@ export default function RestaurantDetail() {
             <Box display="flex" flexDirection="column" gap="spacing.3" paddingTop="spacing.3" borderTopWidth="thin" borderTopColor="surface.border.gray.muted">
               <Box display="flex" flexDirection={{ base: 'column', l: 'row' }} gap="spacing.4" justifyContent="space-between" alignItems={{ base: 'center', l: 'center' }}>
                 <RestaurantChips location={restaurant.location} cuisine={restaurant.cuisine} />
-                <BookingCTA restaurantId={restaurant.id} />
+                <Box width={{ base: '100%', l: 'auto' }}>
+                  <BookingCTA restaurantId={restaurant.id} />
+                </Box>
               </Box>
             </Box>
           </Box>

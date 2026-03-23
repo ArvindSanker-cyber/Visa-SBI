@@ -14,24 +14,40 @@ export default function App() {
       {/* Global button styling */}
       <style>
         {`
-          /* Primary button custom color */
+          /* Primary button custom color - SBI Brand #2E3180 */
           button[data-variant="primary"],
-          button[class*="StyledBaseButton"][class*="primary"] {
+          button[data-variant="primary"] *,
+          [class*="StyledBaseButton"],
+          [data-blade-component="button"],
+          button[class*="primary"] {
             background: #2E3180 !important;
             background-color: #2E3180 !important;
             border-color: #2E3180 !important;
           }
+
+          /* Hover state */
           button[data-variant="primary"]:hover:not(:disabled),
-          button[class*="StyledBaseButton"][class*="primary"]:hover:not(:disabled) {
+          button[data-variant="primary"]:hover:not(:disabled) *,
+          [class*="StyledBaseButton"]:hover:not(:disabled),
+          button[class*="primary"]:hover:not(:disabled) {
             background: #242861 !important;
             background-color: #242861 !important;
             border-color: #242861 !important;
           }
+
+          /* Active/pressed state */
           button[data-variant="primary"]:active:not(:disabled),
-          button[class*="StyledBaseButton"][class*="primary"]:active:not(:disabled) {
+          button[data-variant="primary"]:active:not(:disabled) *,
+          [class*="StyledBaseButton"]:active:not(:disabled),
+          button[class*="primary"]:active:not(:disabled) {
             background: #1a1d45 !important;
             background-color: #1a1d45 !important;
             border-color: #1a1d45 !important;
+          }
+
+          /* Focus state */
+          button[data-variant="primary"]:focus-visible {
+            box-shadow: 0 0 0 3px rgba(46, 49, 128, 0.3) !important;
           }
         `}
       </style>
