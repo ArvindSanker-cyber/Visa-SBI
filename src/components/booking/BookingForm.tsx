@@ -207,8 +207,8 @@ export default function BookingForm({ restaurantId, restaurantName }: BookingFor
         </Box>
       </Box>
 
-      {/* Book Now Button and Secured by Razorpay */}
-      <Box marginTop="spacing.8" display="flex" flexDirection="column" gap="spacing.3">
+      {/* Book Now Button */}
+      <Box marginTop="spacing.8">
         <Button
           variant="primary"
           size="large"
@@ -218,18 +218,6 @@ export default function BookingForm({ restaurantId, restaurantName }: BookingFor
         >
           Book Now
         </Button>
-
-        {/* Secured by Razorpay */}
-        <Box display="flex" gap="spacing.2" alignItems="center" justifyContent="center" paddingTop="spacing.2">
-          <Text size="small" color="surface.text.gray.muted">
-            Secured by
-          </Text>
-          <img
-            src="https://assets.poshvine.com/merchants/razorpay/common/icons/icon-light.svg"
-            alt="Razorpay"
-            style={{ height: '15px', width: 'auto' }}
-          />
-        </Box>
       </Box>
     </Box>
   );

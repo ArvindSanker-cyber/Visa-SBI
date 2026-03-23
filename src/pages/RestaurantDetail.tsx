@@ -74,32 +74,7 @@ export default function RestaurantDetail() {
             <Box display="flex" flexDirection="column" gap="spacing.3" paddingTop="spacing.3" borderTopWidth="thin" borderTopColor="surface.border.gray.muted">
               <Box display="flex" flexDirection={{ base: 'column', l: 'row' }} gap="spacing.4" justifyContent="space-between" alignItems={{ base: 'center', l: 'center' }}>
                 <RestaurantChips location={restaurant.location} cuisine={restaurant.cuisine} />
-                <Box width={{ base: '100%', l: 'auto' }} display="flex" flexDirection="column" gap="spacing.2" alignItems="center">
-                  <BookingCTA restaurantId={restaurant.id} />
-                  {/* Secured by Razorpay - Mobile centered, Desktop right */}
-                  <Box display={{ base: 'flex', l: 'none' }} gap="spacing.2" alignItems="center" justifyContent="center">
-                    <Text size="small" color="surface.text.gray.muted">
-                      Secured by
-                    </Text>
-                    <img
-                      src="https://assets.poshvine.com/merchants/razorpay/common/icons/icon-light.svg"
-                      alt="Razorpay"
-                      style={{ height: '15px', width: 'auto' }}
-                    />
-                  </Box>
-                </Box>
-              </Box>
-
-              {/* Secured by Razorpay - Desktop only, right aligned */}
-              <Box display={{ base: 'none', l: 'flex' }} gap="spacing.2" alignItems="center" justifyContent="flex-end">
-                <Text size="small" color="surface.text.gray.muted">
-                  Secured by
-                </Text>
-                <img
-                  src="https://assets.poshvine.com/merchants/razorpay/common/icons/icon-light.svg"
-                  alt="Razorpay"
-                  style={{ height: '15px', width: 'auto' }}
-                />
+                <BookingCTA restaurantId={restaurant.id} />
               </Box>
             </Box>
           </Box>

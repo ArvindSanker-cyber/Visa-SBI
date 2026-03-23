@@ -34,18 +34,6 @@ export default function Footer() {
             Privacy Policy
           </Link>
         </Box>
-
-        {/* Powered by Razorpay */}
-        <Box display="flex" alignItems="center" gap="spacing.2">
-          <Text size="small" color="surface.text.gray.subtle">
-            Powered by
-          </Text>
-          <img
-            src="https://assets.poshvine.com/merchants/razorpay/common/icons/icon-light.svg"
-            alt="Razorpay"
-            style={{ height: '15px', width: 'auto' }}
-          />
-        </Box>
       </Box>
     </Box>
   );
